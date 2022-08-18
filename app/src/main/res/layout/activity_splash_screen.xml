@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkGray"
+    tools:context=".ui.activity.SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/contGetStarted"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/splash_screen" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="COVID-19 INFO APP"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/about_covid"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="@string/project"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gilroy_light"
+            android:text="@string/about_me"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/layoutroundcorner"
+        android:backgroundTint="@color/colorGray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Get Started To App"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+
+        <ImageButton
+            android:id="@+id/btnGo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorDarkGray"
+            android:fontFamily="@font/gilroy_bold"
+            android:src="@drawable/ic_arrow"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

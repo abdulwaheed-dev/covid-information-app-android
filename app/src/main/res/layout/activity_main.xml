@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGray"
+        tools:context=".ui.activity.MainActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="COVID-19 INFO APP"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="COVID Records "
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorDarkGray"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Positive"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtPositive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="23564"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorDarkGray"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Negative"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtNegative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="4621684"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/colorDarkGray"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/gilroy_light"
+                            android:text="Total Test Records"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtTotalR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:text="4621684"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorDarkGray"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Hospitalized"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtHospital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="4621684"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:cardBackgroundColor="@color/colorDarkGray"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/gilroy_light"
+                                android:text="Dead"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtDead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="4621684"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="More Information about COVID"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/colorDarkGray"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorDarkGray"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:text="Want To Know More About COVID-19 Click Below"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btnKnowMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorGray"
+                            android:backgroundTint="@color/colorGray"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="More Info"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/corona" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="COVID Symptoms"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewSymptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:text="VIEW All"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_symptoms" >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="COVID Precautions"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewPrecautions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:text="VIEW All"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPrecautions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="6"
+                tools:listitem="@layout/item_precautions" >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Project Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/colorDarkGray"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:paddingTop="5sp"
+                        android:paddingEnd="5sp"
+                        android:text="Project by: Abdul Waheed(021-19-0044)"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:paddingTop="5sp"
+                        android:paddingEnd="5sp"
+                        android:text="Course: Mobile Application Development"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:paddingTop="5sp"
+                        android:paddingEnd="5sp"
+                        android:text="Instructor: Nisar Ahmad Siddiqui"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:paddingTop="5sp"
+                        android:paddingEnd="5sp"
+                        android:text="Batch: BS-Computer Science Spring 2022"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
